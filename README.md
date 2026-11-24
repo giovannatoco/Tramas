@@ -1,6 +1,6 @@
 # Tramas – Feito à mão, feito no Brasil
 
-**Página do projeto:** https://giovannatoco.github.io/tramas/
+**Página do projeto:** (https://giovannatoco.github.io/Tramas/)
 
 O Tramas é uma plataforma da moda brasileira e da economia criativa. Ela dá visibilidade a pequenas marcas, designers, costureiras, artesãs e produtoras independentes do Brasil, ligando quem produz a quem quer comprar.
 
