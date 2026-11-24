@@ -1,6 +1,6 @@
 # Tramas – Feito à mão, feito no Brasil
 
-**Página do projeto:** (https://giovannatoco.github.io/Tramas/)
+**Página do projeto:** https://giovannatoco.github.io/Tramas/
 
 O Tramas é uma plataforma da moda brasileira e da economia criativa. Ela dá visibilidade a pequenas marcas, designers, costureiras, artesãs e produtoras independentes do Brasil, ligando quem produz a quem quer comprar.
 
@@ -42,13 +42,13 @@ Projeto do grupo **HackGirls** (Elo, Gih e Vi), da PUC-Campinas, para o **HackBr
 
 A landing page é um site estático (HTML e CSS, sem dependências nem build).
 
-**Online:** acesse https://giovannatoco.github.io/tramas/
+**Online:** acesse https://giovannatoco.github.io/Tramas/
 
 **Localmente:**
 
 ```bash
-git clone https://github.com/giovannatoco/tramas.git
-cd tramas
+git clone https://github.com/giovannatoco/Tramas.git
+cd Tramas
 # abra o index.html direto no navegador, ou sirva a pasta:
 python3 -m http.server 8000
 # e acesse http://localhost:8000
