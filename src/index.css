@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracota: #a33d18;
+  --color-terracota-escuro: #7e2f10;
+  --color-marrom: #4b2414;
+  --color-bege: #fff0e1;
+  --color-creme: #fff8ef;
+  --color-laranja: #e99b32;
+  --color-laranja-claro: #f6c069;
+  --color-oliva: #52672d;
+  --color-oliva-claro: #7d8f57;
+  --color-areia: #ebc9a5;
+  --color-areia-escura: #d9b98c;
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-creme);
+  color: var(--color-marrom);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Textura sutil de papel/fibra natural */
+.textura-papel {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Divisória com ponto de bordado */
+.trama-ponto {
+  background-image: radial-gradient(circle, var(--color-areia-escura) 1.5px, transparent 1.6px);
+  background-size: 14px 3px;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 3px;
+}
+
+/* Animação de entrada suave */
+@keyframes trama-subir {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-subir {
+  animation: trama-subir 0.45s ease-out both;
+}
+
+/* Foco visível para acessibilidade */
+:focus-visible {
+  outline: 3px solid var(--color-laranja);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-areia-escura);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
